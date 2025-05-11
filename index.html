@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  <meta name="keywords" content="monitoreo perecibles, transporte alimentos, cadena de frío, IoT logística, sensores temperatura"/>
+  <meta name="description" content="AgroRoute - Monitoreo inteligente de productos perecibles durante el transporte con tecnología IoT. Control de temperatura, humedad y ubicación en tiempo real."/>
+  <meta name="author" content="AgroRoute Team"/>
+
+  <title>AgroRoute</title>
+  <link rel="icon" href="https://i.postimg.cc/T3GVWdMb/image-removebg-preview-1.png" type="image/png"/>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap" rel="stylesheet"/>
+
+  <link href="css/style.css" rel="stylesheet"/>
+
+  <link href="css/responsive.css" rel="stylesheet"/>
+
+  <style>
+    .animated-img {
+      transition: all 0.5s ease;
+    }
+    
+    .animated-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    /* Efecto hover para botones */
+    .btn-1 {
+      transition: all 0.3s ease;
+    }
+    
+    .btn-1:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    .floating-img {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    .service_box {
+      border: 2px solid transparent;
+      transition: all 0.4s ease;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .service_box:hover {
+      border-color: #4CAF50;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    
+    .service_box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(76, 175, 80, 0.1), transparent);
+      transition: 0.5s;
+    }
+    
+    .service_box:hover::before {
+      left: 100%;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .section-animate {
+      animation: fadeInUp 1s ease-out;
+    }
+    
+    .testimonial-img {
+      border-radius: 50%;
+      border: 3px solid #4CAF50;
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial-img:hover {
+      border-color: #2E7D32;
+      transform: rotate(5deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="index.html">
+                <span>
+                  <img src="https://i.postimg.cc/7Z1HCXHX/image-removebg-preview.png" alt="AgroRoute Logo" width="150px" height="50px" class="animated-img"/>
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex  flex-column flex-lg-row align-items-center">
+                  <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#nosotros">Nosotros </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#soluciones">Soluciones </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contacto">Contáctanos</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="inicio" class="slider_section">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <div class="slider_detail-box">
+                    <h1>
+                      Monitoreo Inteligente <br/>
+                      de Productos <br/>
+                      Perecibles
+                    </h1>
+                    <p>
+                      Con AgroRoute, controla en tiempo real la temperatura, humedad y ubicación de tu carga durante el transporte.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#soluciones" class="btn-1">
+                        Nuestras Soluciones
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="https://vitum.io/hubfs/Monitoreo%20de%20la%20Cadena%20de%20Suministro.png" alt="" class="animated-img floating-img"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <div class="slider_detail-box">
+                    <h1>
+                      Protege tu Carga <br/>
+                      con Tecnología <br/>
+                      IoT
+                    </h1>
+                    <p>
+                      Sensores inteligentes que alertan ante variaciones críticas, garantizando la calidad de tus productos hasta el destino final.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#contacto" class="btn-1">
+                        Solicitar Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="https://quantico.ai/wp-content/uploads/2021/05/5.png" alt="" class="animated-img floating-img"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <div class="slider_detail-box">
+                    <h1>
+                      Trazabilidad Total <br/>
+                      para tu Cadena <br/>
+                      de Frío
+                    </h1>
+                    <p>
+                      Reportes automatizados y certificados de cumplimiento para auditorías y clientes exigentes.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#soluciones" class="btn-1">
+                        Ver Soluciones
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="https://quantico.ai/wp-content/uploads/2021/05/4.png" alt="" class="animated-img floating-img"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- welcome section -->
+  <section id="nosotros" class="welcome_section layout_padding section-animate">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          Nuestra Historia
+        </h2>
+      </div>
+      <div class="layout_padding2">
+        <div class="img-box">
+          <img src="images/welcome.png" alt="" class="animated-img"/>
+        </div>
+        <div class="detail-box">
+          <p>
+            AgroRoute nació de la necesidad de proteger la calidad de los productos perecibles durante su traslado. En un contexto donde una mínima variación de temperatura o humedad puede arruinar cargamentos completos de alimentos, medicinas o flores, vimos una gran oportunidad para innovar desde la tecnología.
+          </p>
+          <p>
+            Desde nuestros primeros prototipos, nos propusimos hacer algo más que ofrecer tecnología: queríamos simplificar procesos y garantizar tranquilidad. Sabíamos que muchas empresas no cuentan con grandes flotas ni sistemas avanzados, por eso diseñamos AgroRoute para que fuera accesible, plug-and-play y útil desde el primer viaje.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end welcome section -->
+
+  <!-- service section -->
+  <section id="soluciones" class="service_section section-animate">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          Nuestras Soluciones
+        </h2>
+      </div>
+      <div class="service_container layout_padding2">
+        <div class="service_box">
+          <div class="img-box">
+            <img src="https://widetech.co/wp-content/uploads/2024/07/monitoreo-inteligente2.webp" alt="" class="animated-img"/>
+          </div>
+          <div class="detail-box">
+            <h4>
+              Monitoreo <br/>
+              en Tiempo Real
+            </h4>
+            <p>
+              Sensores IoT que miden temperatura, humedad y ubicación durante todo el trayecto, con alertas instantáneas ante desviaciones.
+            </p>
+          </div>
+        </div>
+        <div class="service_box">
+          <div class="img-box">
+            <img src="https://dojiw2m9tvv09.cloudfront.net/4/8/reportesdeventasautomatizados1.jpg" height="230px" alt="" class="animated-img"/>
+          </div>
+          <div class="detail-box">
+            <h4>
+              Reportes <br/>
+              Automatizados
+            </h4>
+            <p>
+              Generación de certificados de cadena de frío para cumplimiento normativo y satisfacción de clientes exigentes.
+            </p>
+          </div>
+        </div>
+        <div class="service_box">
+          <div class="img-box">
+            <img src="https://static.idento.es/wp-content/uploads/2023/12/que-es-la-analitica-web.jpg" height="230px" alt="" class="animated-img"/>
+          </div>
+          <div class="detail-box">
+            <h4>
+              Analítica <br/>
+              de Procesos
+            </h4>
+            <p>
+              Identificación de patrones y riesgos potenciales para optimizar rutas y procesos logísticos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- client section -->
+  <section class="client_section layout_padding section-animate">
+    <div class="container">
+      <h2>
+        Testimonios
+      </h2>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_container layout_padding2">
+              <div class="client_text">
+                <p>
+                  Desde que integramos AgroRoute en nuestra cadena de distribución, hemos reducido las pérdidas por temperatura fuera de rango en más del 60%. Ahora tenemos visibilidad total en tiempo real y podemos actuar antes de que un problema ocurra.
+                </p>
+              </div>
+              <div class="detail-box">
+                <div class="img-box">
+                  <img src="https://www.esan.edu.pe/images/blog/2018/03/08/1500x844-protagonismo-mujer.jpg" height="60px" alt="" class="testimonial-img"/>
+                </div>
+                <div class="name">
+                  <h5>
+                    Mariela Gomez
+                  </h5>
+                  <p>
+                    Gerente de Logística en FrutEx Perú
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding2">
+              <div class="client_text">
+                <p>
+                  La tranquilidad que ofrece AgroRoute no tiene precio. Saber que mis productos están viajando en condiciones óptimas, con alertas instantáneas si algo falla, nos ha dado una ventaja enorme frente a la competencia.
+                </p>
+              </div>
+              <div class="detail-box">
+                <div class="img-box">
+                  <img src="https://st3.depositphotos.com/12985790/15794/i/450/depositphotos_157947226-stock-photo-man-looking-at-camera.jpg" height="60px" alt="" class="testimonial-img"/>
+                </div>
+                <div class="name">
+                  <h5>
+                    Carlos Gutiérrez
+                  </h5>
+                  <p>
+                    CEO de AgroPacífico S.A.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding2">
+              <div class="client_text">
+                <p>
+                  Antes dependíamos de llamadas y suerte. Ahora, con los sensores y panel de AgroRoute, mis conductores y yo sabemos exactamente cómo va cada carga. Hemos mejorado la puntualidad y la confianza con nuestros clientes
+                </p>
+              </div>
+              <div class="detail-box">
+                <div class="img-box">
+                  <img src="https://plus.unsplash.com/premium_photo-1682096259050-361e2989706d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tYnJlJTIwam92ZW58ZW58MHx8MHx8fDA%3D" height="60px" alt="" class="testimonial-img"/>
+                </div>
+                <div class="name">
+                  <h5>
+                    José Ramírez
+                  </h5>
+                  <p>
+                    Coordinador de Flota en CoolTrans Express
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- why section -->
+  <section class="why_section layout_padding section-animate">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          ¿Por Qué AgroRoute?
+        </h2>
+      </div>
+      <div class="content-container">
+        <p>
+          Nuestra tecnología está diseñada específicamente para las necesidades del transporte de productos perecibles en el Perú, con soporte local y soluciones adaptadas a nuestra realidad logística.
+        </p>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="img-box">
+              <img src="images/smiley.png" alt="" class="animated-img"/>
+            </div>
+            <div class="detail-box">
+              <h3>
+                24/7
+              </h3>
+              <h6>
+                Monitoreo Continuo
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="img-box">
+              <img src="images/monitor.png" alt="" class="animated-img"/>
+            </div>
+            <div class="detail-box">
+              <h3>
+                15 min
+              </h3>
+              <h6>
+                Instalación Plug-and-Play
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="img-box">
+              <img src="images/multiple-users-silhouette.png" alt="" class="animated-img"/>
+            </div>
+            <div class="detail-box">
+              <h3>
+                100%
+              </h3>
+              <h6>
+                Cobertura Nacional
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="img-box">
+              <img src="images/bar-chart.png" alt="" class="animated-img"/>
+            </div>
+            <div class="detail-box">
+              <h3>
+                +50
+              </h3>
+              <h6>
+                Clientes Satisfechos
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- client section -->
+  <section class="team_section layout_padding section-animate">
+    <div class="container">
+      <h2 class="text-center mb-5">
+        <b>Equipo de AgroRoute</b>
+      </h2>
+      <div id="teamCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="team-card">
+                  <div class="card-content">
+                    <div class="card-img">
+                      <img src="https://i.postimg.cc/XNr7XZpN/image.png" alt="Integrante 1" class="img-fluid">
+                    </div>
+                    <div class="card-info">
+                      <h4>Jenny Balceda Calixto</h4>
+                      <p class="description">Estudiante de décimo ciclo de Ingeniería de Software, con especial interés en el procesamiento de datos y su aplicación para generar valor en la toma de decisiones.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="team-card">
+                  <div class="card-content">
+                    <div class="card-img">
+                      <img src="https://i.postimg.cc/cHLFmyVZ/image.png" alt="Integrante 2" class="img-fluid">
+                    </div>
+                    <div class="card-info">
+                      <h4>Damaris Tasayco Vilcamiza</h4>
+                      <p class="description">Estudiante de Ingeniería de Software, cursando el noveno ciclo, con interés en la programación de aplicaciones web. </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="team-card">
+                  <div class="card-content">
+                    <div class="card-img">
+                      <img src="https://i.postimg.cc/5t34ZLj1/image.png" alt="Integrante 3" class="img-fluid">
+                    </div>
+                    <div class="card-info">
+                      <h4>Diego De La Cruz Arellano</h4>
+                      <p class="description">Soy estudiante de Ingeniería de Software, de decimo ciclo, en la UPC. Soy responsable, observador y perseverante. Tengo experiencia en los lenguajes de programación C++, Java y JavaScript. </p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="team-card">
+                  <div class="card-content">
+                    <div class="card-img">
+                      <img src="https://i.postimg.cc/JhFvFhmK/image.png" alt="Integrante 4" class="img-fluid">
+                    </div>
+                    <div class="card-info">
+                      <h4>Mariela Martinez Carbajal</h4>
+                      <p class="description">Estudiante de noveno ciclo de Ingeniería de Software. Me motiva seguir aprendiendo y adquirir nuevas herramientas que me permitan diseñar y desarrollar soluciones innovadoras. </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="team-card">
+                  <div class="card-content">
+                    <div class="card-img">
+                      <img src="https://i.postimg.cc/L6XxfpjV/image.png" alt="Integrante 5" class="img-fluid">
+                    </div>
+                    <div class="card-info">
+                      <h4>Alejandro Pachas Chavez</h4>
+                      <p class="description">Cuento con más de 3 años en el mundo de la programación, cuento con experiencia con tecnologías de desarrollo web y frameworks tales como Laravel, Nuxtjs y Tailwinds. </p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="team-card">
+                  <div class="card-content">
+                    <div class="card-img">
+                      <img src="https://i.postimg.cc/MpxRJ0tr/image.png" alt="Integrante 6" class="img-fluid">
+                    </div>
+                    <div class="card-info">
+                      <h4>Branco Villegas Peralta</h4>
+                      <p class="description">Estudiante del décimo ciclo de la carrera de Ingeniería de Software. Me considero una persona entusiasta y autodidacta.</p>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#teamCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#teamCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .team-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      height: 100%;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    .card-content {
+      display: flex;
+      height: 100%;
+    }
+    
+    .card-img {
+      flex: 1;
+      min-width: 120px;
+      background: #f5f5f5;
+    }
+    
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .card-info {
+      flex: 2;
+      padding: 20px;
+    }
+    
+    .card-info h4 {
+      color: #2c8a3b;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    
+    .position {
+      color: #666;
+      font-weight: 500;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    
+    .description {
+      color: #555;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+    
+    .social-links a {
+      display: inline-block;
+      color: #2c8a3b;
+      margin-right: 10px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+      color: #1e5a27;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      color: #2c8a3b;
+      opacity: 1;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #2c8a3b;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-size: 50%;
+    }
+    
+    @media (max-width: 992px) {
+      .card-content {
+        flex-direction: column;
+      }
+      
+      .card-img {
+        height: 200px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+  <!-- end client section -->
+  
+  <!-- contact section -->
+  <section id="contacto" class="contact_section layout_padding section-animate">
+    <div class="container contact_heading">
+      <h2>
+        Contáctanos
+      </h2>
+      <p>
+        Para saber más sobre nosotros, lo invitamos a contactarse con nosotros por los siguientes medios:
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Si tienes alguna pregunta o deseas más información, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+          <i class="fa fa-phone-alt"></i> Teléfono: +51 987 654 321  <br>
+          <i class="fa fa-envelope"></i> Correo: info@agroroute.com 
+        </div>
+
+        <div class="col-md-6">
+          <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2020/11/supervision-rendimiento-aplicaciones.png" alt="Imagen de contacto" class="img-fluid animated-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+
+  <div class="footer_bg">
+    <section class="info_section layout_padding2-bottom">
+      <div class="container">
+        <div class="image">
+          <img src="https://i.postimg.cc/7Z1HCXHX/image-removebg-preview.png" alt="AgroRoute Logo" class="animated-img"/>
+        </div>
+        <p class="mt-2" style="color: white;">
+          Tecnología IoT para la protección de productos perecibles
+        </p>
+      </div>
+      <div class="container info_content">
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="d-flex">
+                <h5>
+                  Enlaces Rápidos
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="index.html">
+                      Inicio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#nosotros">
+                      Nosotros
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#soluciones">
+                      Soluciones
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contacto">
+                      Contacto
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="d-flex">
+                <h5>
+                  Industrias
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Agroexportación
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Alimentos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Farmacéutica
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Flores
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Logística
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="d-flex">
+                <h5>
+                  Contacto
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-map-marker"></i> Lima, Perú
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-phone"></i> +51 987 654 321
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-envelope"></i> info@agroroute.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info_section -->
+
+    <section class="container-fluid footer_section">
+      <p>
+        © 2025 AgroRoute. Todos los derechos reservados.
+      </p>
+    </section>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function() {
+      function animateOnScroll() {
+        $('.section-animate').each(function() {
+          var position = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          
+          if (scroll + windowHeight > position) {
+            $(this).addClass('animated');
+          }
+        });
+      }
+      
+      animateOnScroll();
+      $(window).scroll(function() {
+        animateOnScroll();
+      });
+    });
+  </script>
+</body>
+</html>
